@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="calculator.js"></script>
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="shortcut icon" href="Calculator-icon.png" type="image/x-icon">
+    <title>calculator</title>
+</head>
+<body>
+    <div id="ques">
+
+    </div>
+    <div id="display">
+    </div>
+    <div id="keyboard">
+
+<button class="btn dec" onclick="word=''; document.getElementById('display').innerHTML=word;document.getElementById('ques').innerHTML='';">AC</button>
+<button class="btn dec"onclick="word= word.slice(0,word.length- 1); document.getElementById('display').innerHTML=word" >DEC</button>
+<button class="btn opr" onclick="word+='÷'; document.getElementById('display').innerHTML=word">&#247</button>
+<button class="btn opr" onclick="word+='×'; document.getElementById('display').innerHTML=word">&#215</button>
+<!-- <button id="sci">SCI</button> -->
+<button class="btn" onclick="word+='7'; document.getElementById('display').innerHTML=word">7</button>
+<button class="btn" onclick="word+='8'; document.getElementById('display').innerHTML=word">8</button>
+<button class="btn" onclick="word+='9'; document.getElementById('display').innerHTML=word">9</button>
+<button class="btn opr" onclick="word+='!'; document.getElementById('display').innerHTML=word">!</button><br>
+<button class="btn" onclick="word+='4'; document.getElementById('display').innerHTML=word">4</button>
+<button class="btn" onclick="word+='5'; document.getElementById('display').innerHTML=word">5</button>
+<button class="btn" onclick="word+='6'; document.getElementById('display').innerHTML=word">6</button>
+<button class="btn opr" onclick="word+='+'; document.getElementById('display').innerHTML=word">+</button><br>
+<button class="btn" onclick="word+='1'; document.getElementById('display').innerHTML=word">1</button>
+<button class="btn" onclick="word+='2'; document.getElementById('display').innerHTML=word">2</button>
+<button class="btn" onclick="word+='3'; document.getElementById('display').innerHTML=word">3</button>
+<button class="btn opr" onclick="word+='-'; document.getElementById('display').innerHTML=word">-</button><br>
+<button class="btn" onclick="if(!(word.length==0)){word+='00'; document.getElementById('display').innerHTML=word;}">00</button>
+<button class="btn" onclick="if(!(word.length==0)){word+='0'; document.getElementById('display').innerHTML=word;}">0</button>
+<button class="btn" onclick="word.length==0?word+='0.':word+='.'; document.getElementById('display').innerHTML=word">.</button>
+<button class="btn" id="solve" onclick="solve()">=</button><br>
+    </div>
+</body>
+</html>
