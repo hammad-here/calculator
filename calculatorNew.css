@@ -1,0 +1,53 @@
+
+#display{
+    font-size: 15vh;
+    position: fixed;
+    right: 20vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 0px;
+}
+.btn{
+    width: 20vw;
+    height: 15vh;
+    border: 2px solid black;
+    font-size: 6vh;
+    margin: 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgba(129, 129, 129, 0.568);
+}
+
+#keyboard{
+    position: fixed;
+    bottom: 0px;
+}
+
+.dec{
+    background-color: rgba(255, 46, 46, 0.678);
+}
+
+#solve{
+    background-color: rgba(110, 228, 105, 0.74);
+}
+
+
+#ques{
+    height: 10vh;
+    font-size: 10vh;
+    position: fixed;
+    left: 0vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgba(0, 0, 0, 0.61);
+}
+.opr{
+    background-color:rgb(99, 146, 207);
+}
+
+#sci{
+    height: 4vh;
+    width: 5vw;
+    display: none;
+    background-color: black;
+    color: aliceblue;
+    position: fixed;
+    bottom: 75vh ;
+}
