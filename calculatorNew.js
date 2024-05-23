@@ -14,6 +14,8 @@ var word="";
                 word2.pop();
                 word2=word2.toString();
                 word=word.toString();
+                word2=word2.replace(/,/g, "");
+                word=word.replace(/,/g, "");
                 console.log(word,word2)
                 document.getElementById("display").innerText=word;
               }else if(element.innerHTML=="="){
